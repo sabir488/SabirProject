@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Login Application</title>
+<meta charset="utf-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/login.css"></link>
+<link href="/css/login.css" rel="stylesheet"></link>
+</head>
+<body>
+	<div class="container">
+		<div class="starter-template">
+			<form id="loginForm" method="post" action="/validateLogin" modelAttribute="login">
+				<h1>Login Form</h1>
+				<input placeholder="Username" type="text" name="userName" id="userName" required="required"></input> 
+				<input placeholder="Password" type="password" name="userPassword" id="userPassword" required="required"></input>
+				<button type="submit" name="submit">Submit</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
